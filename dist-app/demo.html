@@ -1,0 +1,17 @@
+<meta charset="utf-8">
+<title>TestVueApp demo</title>
+<script src="https://unpkg.com/vue"></script>
+<script src="./TestVueApp.umd.js"></script>
+<link rel="stylesheet" href="./TestVueApp.css">
+
+<div id="app">
+  <demo></demo>
+</div>
+
+<script>
+new Vue({
+  components: {
+    demo: TestVueApp
+  }
+}).$mount('#app')
+</script>

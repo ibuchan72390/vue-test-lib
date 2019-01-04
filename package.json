@@ -1,10 +1,16 @@
 {
-  "name": "vue-lib",
+  "name": "test-vue-lib",
   "version": "0.1.0",
-  "private": true,
+  "main": "./dist-component/TestVueComponent.common.js",
+  "files": [
+    "dist-component/*",
+    "src/*"
+  ],
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
+    "build": "vue-cli-service build --target lib --name TestVueApp",
+    "build-helloworld": "vue-cli-service build --target lib --name TestVueComponent ./src/components/HelloWorld.vue",
+    "build-handler": "vue-cli-service build --target lib --name TestVueInstaller ./src/handler.js",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
